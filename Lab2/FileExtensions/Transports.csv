@@ -1,0 +1,10 @@
+"TransportType";"ReleaseYear";"RegistrationNumber"
+Car;2010;a12bv0
+Bus;2005;fg44d7
+Tram;2003;sr28k1
+
+"TrolleybusType";"ReleaseYear";"RegistrationNumber";"RouteNumber";"Mileage"
+Trolleybus;2015;y3hj72;78;50
+Trolleybus;2009;b4xq47;204;64
+Trolleybus;2012;s8vf56;78;52
+Trolleybus;2007;o5el23;59;49
