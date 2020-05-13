@@ -14,7 +14,7 @@ namespace Task1.FileExtensions
 
         public static IList<Transport> GetTransports(string filePath)
         {
-            using (var reader = new StreamReader($@"..\..\..\FileExtensions\{filePath}"))
+            using (var reader = new StreamReader(filePath))
             {
                 using (var csv = new CsvReader(reader, System.Globalization.CultureInfo.CurrentCulture))
                 {
@@ -61,7 +61,7 @@ namespace Task1.FileExtensions
 
         public static void SetProducts(IReadOnlyCollection<Transport> transports, string filePath)
         {
-            using (var writer = new StreamWriter($@"..\..\..\FileExtensions\{filePath}"))
+            using (var writer = new StreamWriter(filePath))
             {
                 using (var csv = new CsvWriter(writer, System.Globalization.CultureInfo.CurrentCulture))
                 {
